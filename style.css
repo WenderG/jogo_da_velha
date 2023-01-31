@@ -1,0 +1,34 @@
+:root {
+    --branco:#ffffff;
+    --cinza:#bdbdbd;
+    --preto:#000000;
+}
+
+.corpo {
+    background-color: var(--preto);
+    text-align: center;
+}
+
+h1 {
+    color: var(--branco);
+}
+
+.alinhamento {
+    margin: 4rem 0 0 0;
+}
+
+.mesa {
+    background-color: var(--cinza);
+    display: grid;
+    grid-template-areas: "a b c"
+                         "d e f"
+                         "g h i";
+    height: 500px;
+    width: 340px;
+}
+
+#areas {
+    background-color: var(--branco);
+    height: 100px;
+    width: 100px;
+}
