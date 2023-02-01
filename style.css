@@ -2,33 +2,59 @@
     --branco:#ffffff;
     --cinza:#bdbdbd;
     --preto:#000000;
+    --vermelho: #ff0000;
 }
 
 .corpo {
     background-color: var(--preto);
-    text-align: center;
 }
 
 h1 {
     color: var(--branco);
-}
-
-.alinhamento {
-    margin: 4rem 0 0 0;
+    text-align: center;
 }
 
 .mesa {
     background-color: var(--cinza);
+    border-radius: 14px;
     display: grid;
     grid-template-areas: "a b c"
                          "d e f"
                          "g h i";
-    height: 500px;
+    height: 340px;
     width: 340px;
+    margin: auto;
+    padding-top: 0.4em;
 }
 
 #areas {
     background-color: var(--branco);
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
+    margin: auto;
 }
+
+.texto {
+    color: var(--vermelho);
+    font-size: 80px;
+    text-align: center;
+}   
+
+.alinhamento {
+    padding: 0.5em 0 0 0;
+}
+
+h2 {
+    color: var(--branco);
+    font-size: 40px;
+}
+
+h3 {
+    color: var(--branco);
+    font-size: 30px;
+}
+
+#placar {
+    color: var(--branco);
+}
+
