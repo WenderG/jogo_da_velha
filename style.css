@@ -27,7 +27,7 @@ h1 {
     padding-top: 0.4em;
 }
 
-#areas {
+.areas {
     background-color: var(--branco);
     height: 90px;
     width: 90px;
@@ -39,6 +39,10 @@ h1 {
     font-size: 80px;
     text-align: center;
 }   
+
+/* .checkbox {
+    display: none;
+} */
 
 .alinhamento {
     padding: 0.5em 0 0 0;

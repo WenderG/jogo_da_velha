@@ -7,61 +7,61 @@
     <link rel="stylesheet" href="style.css">
     <title>Jogo da Velha</title>
 </head>
-<body class="corpo">
+<body class="corpo" onload="jogo()">
     <h1>JOGO DA VELHA</h1>
 
     <section>
         <div class="mesa">
             <div class="alinhamento">
-                <div id="areas" class="texto">
+                <div id="a_um" class="areas texto" onclick="marca_a1()">
+                    <!-- <input type="checkbox" class="checkbox"> -->
+                </div>
+            </div>
+            
+            <div class="alinhamento">
+                <div id="a_dois" class="areas texto" onclick="marca_a2()">
                     
                 </div>
             </div>
             
             <div class="alinhamento">
-                <div id="areas" class="texto">
-                    
-                </div>
-            </div>
-            
-            <div class="alinhamento">
-                <div id="areas" class="texto">
+                <div id="a_tres" class="areas texto" onclick="marca_a3()">
                     
                 </div>
             </div>
 
             <div class="alinhamento">
-                <div id="areas" class="texto">
+                <div id="a_quatro" class="areas texto" onclick="marca_a4()">
                     
                 </div>
             </div>
             
             <div class="alinhamento">
-                <div id="areas" class="texto">
+                <div id="a_cinco" class="areas texto" onclick="marca_a5()">
                     
                 </div>
             </div>
 
             <div class="alinhamento">
-                <div id="areas" class="texto">
+                <div id="a_seis" class="areas texto" onclick="marca_a6()">
                     
                 </div>
             </div>
             
             <div class="alinhamento">
-                <div id="areas" class="texto">
+                <div id="a_sete" class="areas texto" onclick="marca_a7()">
                     
                 </div>
             </div>
             
             <div class="alinhamento">
-                <div id="areas" class="texto">
+                <div id="a_oito" class="areas texto" onclick="marca_a8()">
                     
                 </div>
             </div>
             
             <div class="alinhamento">
-                <div id="areas" class="texto">
+                <div id="a_nove" class="areas texto" onclick="marca_a9()">
                     
                 </div>
             </div>
@@ -71,7 +71,7 @@
 
     <section>
         <div id="turno">
-            <h2>Vez do jogador X!</h2>
+            <h2>É a vez do jogador X!</h2>
         </div>
     </section>
 
