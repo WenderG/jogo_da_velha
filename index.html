@@ -69,22 +69,27 @@
         </div>
     </section>
 
-    <section>
+    <section class="container">
         <div id="turno">
             <h2>É a vez do jogador X!</h2>
         </div>
-    </section>
 
-    <button onclick="jogo()">Pontuar</button><button onclick="resetar()">Limpar</button>
+        <section class="display_botoes">
+    
+            <button class="botao_pontuar" onclick="jogo()">Pontuar</button>  
+            <button onclick="resetar()">Limpar</button>
 
-    <section>
-        <h3>
-            <div id="placar">
-                Pontuação<br>
-                Jogador X: 0<br>
-                Jogador O: 0
-            </div>
-        </h3>
+        </section>
+
+        <section>
+            <h3>
+                <div id="placar">
+                    Pontuação<br><br>
+                    Jogador X: 0<br>
+                    Jogador O: 0
+                </div>
+            </h3>
+        </section>
     </section>
 
     <script src="main.js"></script>

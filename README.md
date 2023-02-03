@@ -11,6 +11,6 @@ Sobre: Site para jogar o clássico jogo da velha, criado através de HTML, CSS e
 [X] Criar a base visual do jogo <br>
 [X] Estilizar a base visual do jogo <br>
 [X] Criar a lógica do jogo <br>
-[] Tornar o site responsivo <br>
+[X] Tornar o site responsivo <br>
 [] Revisão dos arquivos <br>
 [] Atualização final do README <br>

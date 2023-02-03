@@ -3,6 +3,7 @@
     --cinza:#bdbdbd;
     --preto:#000000;
     --vermelho: #ff0000;
+    --vermelho-escuro: #740101;
 }
 
 .corpo {
@@ -38,13 +39,22 @@ h1 {
     color: var(--vermelho);
     font-size: 80px;
     text-align: center;
-}   
+}
+
+.container {
+    text-align: center;
+}
 
 button {
-    background-color: #ff0000;
+    background-color: var(--vermelho);
+    border: 3px solid var(--vermelho-escuro);
     color: var(--branco);
     font-size: 15px;
     width: 100px;
+}
+
+.botao_pontuar {
+    margin-right: 1rem;
 }
 
 .alinhamento {
