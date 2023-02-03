@@ -8,89 +8,92 @@
     <title>Jogo da Velha</title>
 </head>
 <body class="corpo" onload="jogo()">
-    <h1>JOGO DA VELHA</h1>
-
-    <section>
-        <div class="mesa">
-            <div class="alinhamento">
-                <div id="a_um" class="areas texto" onclick="marca_a1()">
-                    <!-- <input type="checkbox" class="checkbox"> -->
+    <header>
+        <h1>JOGO DA VELHA</h1>
+    </header>
+    <main>
+        <section class="jogo_da_velha">
+            <div class="mesa">
+                <div class="alinhamento">
+                    <div id="a_um" class="areas texto" onclick="marca_a1()">
+                        <!-- <input type="checkbox" class="checkbox"> -->
+                    </div>
                 </div>
-            </div>
-            
-            <div class="alinhamento">
-                <div id="a_dois" class="areas texto" onclick="marca_a2()">
-                    
+                
+                <div class="alinhamento">
+                    <div id="a_dois" class="areas texto" onclick="marca_a2()">
+                        
+                    </div>
                 </div>
-            </div>
-            
-            <div class="alinhamento">
-                <div id="a_tres" class="areas texto" onclick="marca_a3()">
-                    
+                
+                <div class="alinhamento">
+                    <div id="a_tres" class="areas texto" onclick="marca_a3()">
+                        
+                    </div>
                 </div>
-            </div>
-
-            <div class="alinhamento">
-                <div id="a_quatro" class="areas texto" onclick="marca_a4()">
-                    
-                </div>
-            </div>
-            
-            <div class="alinhamento">
-                <div id="a_cinco" class="areas texto" onclick="marca_a5()">
-                    
-                </div>
-            </div>
-
-            <div class="alinhamento">
-                <div id="a_seis" class="areas texto" onclick="marca_a6()">
-                    
-                </div>
-            </div>
-            
-            <div class="alinhamento">
-                <div id="a_sete" class="areas texto" onclick="marca_a7()">
-                    
-                </div>
-            </div>
-            
-            <div class="alinhamento">
-                <div id="a_oito" class="areas texto" onclick="marca_a8()">
-                    
-                </div>
-            </div>
-            
-            <div class="alinhamento">
-                <div id="a_nove" class="areas texto" onclick="marca_a9()">
-                    
-                </div>
-            </div>
-           
-        </div>
-    </section>
-
-    <section class="container">
-        <div id="turno">
-            <h2>É a vez do jogador X!</h2>
-        </div>
-
-        <section class="display_botoes">
     
-            <button class="botao_pontuar" onclick="jogo()">Pontuar</button>  
-            <button onclick="resetar()">Limpar</button>
-
-        </section>
-
-        <section>
-            <h3>
-                <div id="placar">
-                    Pontuação<br><br>
-                    Jogador X: 0<br>
-                    Jogador O: 0
+                <div class="alinhamento">
+                    <div id="a_quatro" class="areas texto" onclick="marca_a4()">
+                        
+                    </div>
                 </div>
-            </h3>
+                
+                <div class="alinhamento">
+                    <div id="a_cinco" class="areas texto" onclick="marca_a5()">
+                        
+                    </div>
+                </div>
+    
+                <div class="alinhamento">
+                    <div id="a_seis" class="areas texto" onclick="marca_a6()">
+                        
+                    </div>
+                </div>
+                
+                <div class="alinhamento">
+                    <div id="a_sete" class="areas texto" onclick="marca_a7()">
+                        
+                    </div>
+                </div>
+                
+                <div class="alinhamento">
+                    <div id="a_oito" class="areas texto" onclick="marca_a8()">
+                        
+                    </div>
+                </div>
+                
+                <div class="alinhamento">
+                    <div id="a_nove" class="areas texto" onclick="marca_a9()">
+                        
+                    </div>
+                </div>
+               
+            </div>
         </section>
-    </section>
+    
+        <section class="container">
+            <div id="turno">
+                <h2>É a vez do jogador X!</h2>
+            </div>
+    
+            <section class="display_botoes">
+        
+                <button class="botao_pontuar" onclick="jogo()">Pontuar</button>  
+                <button onclick="resetar()">Limpar</button>
+    
+            </section>
+    
+            <section>
+                <h3>
+                    <div id="placar">
+                        Pontuação<br><br>
+                        Jogador X: 0<br>
+                        Jogador O: 0
+                    </div>
+                </h3>
+            </section>
+        </section>
+    </main>
 
     <script src="main.js"></script>
 </body>

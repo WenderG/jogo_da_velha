@@ -75,3 +75,11 @@ h3 {
     color: var(--branco);
 }
 
+@media (min-width: 1024px){
+    main {
+        display: grid;
+        grid-template-areas: "a b";
+        margin: 5rem 15% 0 15%;
+    }
+}
+    
