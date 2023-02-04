@@ -156,13 +156,13 @@ function pontuacao() {
         pontos_X++
         pontos.innerHTML = `<h3>Pontuação<br><br> 
                                 Jogador X: ${pontos_X} <br>
-                                jogador O: ${pontos_O}
+                                Jogador O: ${pontos_O}
                             </h3>`
     }else if(vencedor == "O"){
         pontos_O++
         pontos.innerHTML = `<h3>Pontuação<br><br> 
                                 Jogador X: ${pontos_X} <br>
-                                jogador O: ${pontos_O}
+                                Jogador O: ${pontos_O}
                             </h3>`
     }
 }
