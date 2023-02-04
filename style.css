@@ -28,6 +28,10 @@ h1 {
     padding-top: 0.4em;
 }
 
+.alinhamento {
+    padding: 0.5em 0 0 0;
+}
+
 .areas {
     background-color: var(--branco);
     height: 90px;
@@ -53,17 +57,13 @@ button {
     width: 100px;
 }
 
-.botao_pontuar {
-    margin-right: 1rem;
-}
-
-.alinhamento {
-    padding: 0.5em 0 0 0;
-}
-
 h2 {
     color: var(--branco);
     font-size: 30px;
+}
+
+.botao_pontuar {
+    margin-right: 1rem;
 }
 
 h3 {

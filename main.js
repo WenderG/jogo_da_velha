@@ -1,3 +1,4 @@
+
 let a1 = window.document.getElementById('a_um')
 let a2 = window.document.getElementById('a_dois')
 let a3 = window.document.getElementById('a_tres')
@@ -10,15 +11,15 @@ let a9 = window.document.getElementById('a_nove')
 let turno = window.document.getElementById('turno')
 let pontos = window.document.getElementById('placar')
 
-let area1
-let area2
-let area3
-let area4
-let area5
-let area6
-let area7
-let area8
-let area9
+let area1 = null
+let area2 = null
+let area3 = null
+let area4 = null
+let area5 = null
+let area6 = null
+let area7 = null
+let area8 = null
+let area9 = null
 let vencedor
 let pontos_X = 0
 let pontos_O = 0
@@ -176,57 +177,66 @@ function resetar() {
     a7.innerHTML = ""
     a8.innerHTML = ""
     a9.innerHTML = ""
+
+    area1 = null
+    area2 = null
+    area3 = null
+    area4 = null
+    area5 = null
+    area6 = null
+    area7 = null
+    area8 = null
+    area9 = null
     
-    if(aux % 2 == 0) {
-        turno.innerHTML = "<h2>É a vez do jogador X!</h2>"
-    }else {
-        turno.innerHTML = "<h2>É a vez do jogador O!</h2>"
-    }
+    aux = 0
+
+    turno.innerHTML = "<h2>É a vez do jogador X!</h2>"
 }
 
 function jogo(){
-    if(area1 == area2 && area2 == area3){ //linha 1
+    if(area1 == area2 && area2 == area3 && area1 != null){ //linha 1
         turno.innerHTML = `<h2>Vitória do jogador ${area1}!</h2>`
         vencedor = area1
         pontuacao()
 
-    }else if(area4 == area5 && area5 == area6){ //linha 2
+    }else if(area4 == area5 && area5 == area6 && area4 != null){ //linha 2
         turno.innerHTML = `<h2>Vitória do jogador ${area4}!</h2>`
         vencedor = area4
         pontuacao()
 
-    }else if(area7 == area8 && area8 == area9){ //linha 3
+    }else if(area7 == area8 && area8 == area9 && area7 != null){ //linha 3
         turno.innerHTML = `<h2>Vitória do jogador ${area7}!</h2>`
         vencedor = area7
         pontuacao()
 
-    }else if(area1 == area4 && area4 == area7){ //vertical 1
+    }else if(area1 == area4 && area4 == area7 && area1 != null){ //vertical 1
         turno.innerHTML = `<h2>Vitória do jogador ${area1}!</h2>` 
         vencedor = area1
         pontuacao()
 
-    }else if(area2 == area5 && area5 == area8){ //vertical 2 
+    }else if(area2 == area5 && area5 == area8 && area2 != null){ //vertical 2 
         turno.innerHTML = `<h2>Vitória do jogador ${area2}!</h2>`
         vencedor = area2
         pontuacao()
 
-    }else if(area3 == area6 && area6 == area9){ //vertical 3
+    }else if(area3 == area6 && area6 == area9 && area3 != null){ //vertical 3
         turno.innerHTML = `<h2>Vitória do jogador ${area3}!</h2>`
         vencedor = area3
         pontuacao()
 
-    }else if(area1 == area5 && area5 == area9){ //diagonal esquerda
+    }else if(area1 == area5 && area5 == area9 && area1 != null){ //diagonal esquerda
         turno.innerHTML = `<h2>Vitória do jogador ${area1}!</h2>`
         vencedor = area1
         pontuacao()
 
-    }else if(area3 == area5 && area5 == area7){ //diagonal direita
+    }else if(area3 == area5 && area5 == area7 && area3 != null){ //diagonal direita
         turno.innerHTML = `<h2>Vitória do jogador ${area3}!</h2>`
         vencedor = area3
         pontuacao()
 
-    }else{ //nenhuma opção
+    }else{ //nenhuma opçãoS
         turno.innerHTML = `<h2>Deu velha!</h2>`
         vencedor = "0"
     }
 }
+
