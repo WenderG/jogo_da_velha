@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Jogo da Velha</title>
 </head>
-<body class="corpo">
+<body class="corpo"  onload="nome(), placarInicial()">
     <header>
         <h1>JOGO DA VELHA</h1>
     </header>
@@ -73,14 +73,14 @@
     
         <section class="container">
             <div id="turno">
-                <h2>É a vez do jogador X!</h2>
+                <h2>É a vez do X!</h2>
             </div>
     
             <section class="display_botoes">
         
                 <button class="botao_pontuar" onclick="jogo()">Pontuar</button>  
-                <button onclick="resetar()">Limpar</button>
-    
+                <button onclick="limpar()">Limpar</button>
+
             </section>
     
             <section>
@@ -94,6 +94,9 @@
             </section>
         </section>
     </main>
+    <footer class="rodape">
+        &copy; 2023 - Desenvolvido por @WenderG
+    </footer>
 
     <script src="main.js"></script>
 </body>

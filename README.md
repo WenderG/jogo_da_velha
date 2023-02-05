@@ -2,7 +2,7 @@
 
 #MOBILE_FIRST
 
->Status do projeto: Em desenvolvimento.
+>Status do projeto: Finalizado.
 
 Sobre: Site para jogar o clássico jogo da velha, criado através de HTML, CSS e JavaScript
 
@@ -13,4 +13,4 @@ Sobre: Site para jogar o clássico jogo da velha, criado através de HTML, CSS e
 [X] Criar a lógica do jogo <br>
 [X] Tornar o site responsivo <br>
 [X] Revisão dos arquivos <br>
-[] Atualização final do README <br>
+[X] Atualização final do README <br>
